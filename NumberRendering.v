@@ -1,6 +1,16 @@
+Require Import Coq.Numbers.DecimalString.
 Require Import Coq.QArith.QArith.
+Require Import Coq.Strings.String.
 
-Section NumberPrinting.
+Import NilEmpty.
+
+Close Scope Q_scope.
+
+(** Provides conversion functions from numbers to strings.
+  *)
+Section NumberRendering.
+
+  Local Open Scope string_scope.
 
   (** Converts a binary number in Z to a string.
       - [z] is the number to convert
@@ -19,5 +29,7 @@ Section NumberPrinting.
     end.
 
   Local Close Scope Q_scope.
+
+  Local Close Scope string_scope.
 
 End NumberRendering.
