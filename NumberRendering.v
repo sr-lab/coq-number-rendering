@@ -32,4 +32,13 @@ Section NumberRendering.
 
   Local Close Scope string_scope.
 
+  (** Converts a string to a natural number or 0 if it does not make sense.
+      - [s] is the string to convert
+    *)
+  Definition nat_of_string (s : string) : nat :=
+    match int_of_string s with
+    | Some s' => Z.to_nat (Z.of_int s')
+    | _ => 0
+    end.
+
 End NumberRendering.
