@@ -12,4 +12,4 @@ Turning numbers into strings and vice-versa was a common problem in my Coq proje
 * `nat_of_string`: Converts a string to a natural number or 0 if it does not make sense.
 
 ## Limitations
-This library does not have any accompanying proofs. This may be addresed in the future. Not every numeric data type can be rendered as a string (numbers in R area prime exmaple of this), but the methods implemented here are not exhaustive either. This library will expand as needed.
+This library does not have any accompanying proofs. This may be addresed in the future. Not every numeric data type can be rendered as a string (numbers in R are a prime exmaple of this), but the methods implemented here are not exhaustive either. This library will expand as needed.
